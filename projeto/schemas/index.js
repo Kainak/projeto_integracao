@@ -9,7 +9,8 @@ import horarios from './horarios.js'
 import clube from './clube.js'
 import equipe from './equipe.js'
 import duvidas from './duvidas.js'
+import laboratorios from './laboratorios.js'
 
 
-export const schemaTypes = [noticia, metodo, certificados, premios, listaDePremios, preClube, horarios, clube, equipe, duvidas]
+export const schemaTypes = [noticia, metodo, certificados, premios, listaDePremios, preClube, horarios, clube, equipe, duvidas, laboratorios]
 
