@@ -17,6 +17,16 @@ export default {
         name: 'conteudo',
         type: 'string',
         title: 'Conteúdo'
+      },
+      {
+        name: 'imagem',
+        type: 'image',
+        title: 'Imagem'
+      },
+      {
+        name: 'data',
+        type: 'date',
+        title: 'Data'
       }
     ]
 }
