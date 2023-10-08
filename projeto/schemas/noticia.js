@@ -23,10 +23,5 @@ export default {
         type: 'image',
         title: 'Imagem'
       },
-      {
-        name: 'data',
-        type: 'date',
-        title: 'Data'
-      }
     ]
 }
