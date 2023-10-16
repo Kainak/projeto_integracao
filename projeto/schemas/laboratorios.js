@@ -14,14 +14,29 @@ export default{
         title: 'Descrição'
       },
       {
-        name: 'imagens',
-        type: 'array',
-        title: 'Imagens',
-        of: [
-          {
-            type: 'image'
-          }
-        ]
+        name: 'imgGrande',
+        type: 'image',
+        title: 'Imagem grande'
+      },
+      {
+        name: 'imgGrandeResponsiva1',
+        type: 'image',
+        title: 'Imagem grande responsiva 1'
+      },
+      {
+        name: 'imgGrandeResponsiva2',
+        type: 'image',
+        title: 'Imagem grande responsiva 2'
+      },
+      {
+        name: 'imgPequena1',
+        type: 'image',
+        title: 'Imagem Pequena 1'
+      },
+      {
+        name: 'imgPequena2',
+        type: 'image',
+        title: 'Imagem Pequena 2'
       }
     ]
   }
