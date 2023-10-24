@@ -4,6 +4,11 @@ export default {
     title: 'Lista de Prêmios',
     fields: [
       {
+        name:'ordem',
+        type:'number',
+        title: 'Ordem'
+      },
+      {
         name: 'imagem',
         type: 'image',
         title: 'Imagem'

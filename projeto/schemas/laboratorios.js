@@ -4,6 +4,11 @@ export default{
     title: 'Laboratórios',
     fields: [
       {
+        name:'ordem',
+        type:'number',
+        title: 'Ordem'
+      },
+      {
         name: 'titulo',
         type: 'string',
         title: 'Título'
