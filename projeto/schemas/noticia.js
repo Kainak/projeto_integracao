@@ -24,6 +24,11 @@ export default {
         title: 'Imagem'
       },
       {
+        name: 'imagemresponsiva',
+        type: 'image',
+        title: 'Imagemresponsiva'
+      },
+      {
         name: 'data',
         type: 'date',
         title: 'Data'
