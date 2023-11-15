@@ -1,5 +1,5 @@
-import horariospre from './horarios_pre.js'
-import horariosclube from './horarios_clube.js'
+import horariosPre from './horariosPre.js'
+import horariosClube from './horariosClube.js'
 import noticia from './noticia.js'
 import metodo from './metodo.js'
 import certificados from './certificados.js'
@@ -12,5 +12,5 @@ import duvidas from './duvidas.js'
 import laboratorios from './laboratorios.js'
 
 
-export const schemaTypes = [noticia, metodo, certificados, premios, listaDePremios, preClube, horariospre,horariosclube , clube, equipe, duvidas, laboratorios]
+export const schemaTypes = [noticia, metodo, certificados, premios, listaDePremios, preClube, horariosPre,horariosClube , clube, equipe, duvidas, laboratorios]
 

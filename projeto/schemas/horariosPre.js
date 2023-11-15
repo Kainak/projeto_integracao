@@ -1,7 +1,7 @@
 export default {
     name: 'horarios_pre_clube',
     type: 'document',
-    title: 'Horários Pré Clube',
+    title: 'Horarios Pre Clube',
     fields: [
       {
         name: 'turnoManha',
@@ -45,7 +45,8 @@ export default {
           {
             type: 'string'
           }
-        ]
+        ],
+     
       },
       {
         name: 'turma',
@@ -55,8 +56,8 @@ export default {
           {
             type: 'string'
           }
-        ]
-      },
+        ],
+         },
     ]
   }
   

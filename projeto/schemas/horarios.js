@@ -1,7 +1,7 @@
 export default {
     name: 'horarios',
     type: 'object',
-    title: 'Horários',
+    title: 'Horarios',
     fields: [
       {
         name: 'turnoManha',

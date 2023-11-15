@@ -1,7 +1,7 @@
 export default {
     name: 'horarios_clube',
     type: 'document',
-    title: 'Horários Clube',
+    title: 'Horarios Clube',
     fields: [
       {
         name: 'turnoManha',
