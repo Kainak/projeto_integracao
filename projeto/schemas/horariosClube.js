@@ -45,7 +45,8 @@ export default {
           {
             type: 'string'
           }
-        ]
+        ],
+        validation: Rule => Rule.max(4).error('não pode ter mais de 4 dias')
       },
       {
         name: 'turma',
@@ -55,7 +56,8 @@ export default {
           {
             type: 'string'
           }
-        ]
+        ],
+        validation: Rule => Rule.max(4).error('não pode ter mais de 4 turmas')
       },
     ]
   }
