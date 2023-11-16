@@ -6,17 +6,20 @@ export default {
       {
         name: 'titulo',
         type: 'string',
-        title: 'Titulo'
+        title: 'Titulo',
+        validation: Rule => Rule.max(100).warning('A resposta deve ter no máximo 100 caracteres')
       },
       {
         name: 'subtitulo',
         type: 'string',
-        title: 'Sub título'
+        title: 'Sub título',
+        validation: Rule => Rule.max(150).warning('A resposta deve ter no máximo 300 caracteres')
       },
       {
         name: 'conteudo',
         type: 'string',
-        title: 'Conteúdo'
+        title: 'Conteúdo',
+        validation: Rule => Rule.max(2000).warning('A resposta deve ter no máximo 2000 caracteres')
       },
       {
         name: 'imagem',

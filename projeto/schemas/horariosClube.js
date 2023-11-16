@@ -11,12 +11,14 @@ export default {
           {
             name: 'inicio',
             type: 'string',
-            title: 'Início'
+            title: 'Início',
+            validation: Rule => Rule.max(5).warning('A resposta deve ter no máximo 5 caracteres'),
           },
           {
             name: 'fim',
             type: 'string',
-            title: 'Fim'
+            title: 'Fim',
+            validation: Rule => Rule.max(5).warning('A resposta deve ter no máximo 5 caracteres'),
           }
         ]
       },
@@ -28,12 +30,14 @@ export default {
           {
             name: 'inicio',
             type: 'string',
-            title: 'Início'
+            title: 'Início',
+            validation: Rule => Rule.max(5).warning('A resposta deve ter no máximo 5 caracteres'),
           },
           {
             name: 'fim',
             type: 'string',
-            title: 'Fim'
+            title: 'Fim',
+            validation: Rule => Rule.max(5).warning('A resposta deve ter no máximo 5 caracteres'),
           }
         ]
       },
@@ -43,9 +47,11 @@ export default {
         title: 'Dias da Semana',
         of: [
           {
-            type: 'string'
+            type: 'string',
+            validation: Rule => Rule.max(15).error('Não pode ter mais de 15 caracteres.')
           }
         ],
+     
         validation: Rule => Rule.max(4).error('não pode ter mais de 4 dias')
       },
       {
@@ -54,9 +60,11 @@ export default {
         title: 'Turma',
         of: [
           {
-            type: 'string'
+            type: 'string',
+            validation: Rule => Rule.max(35).error('Não pode ter mais de 35 caracteres.')
           }
         ],
+      
         validation: Rule => Rule.max(4).error('não pode ter mais de 4 turmas')
       },
     ]

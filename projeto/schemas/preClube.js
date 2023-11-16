@@ -6,7 +6,8 @@ export default {
       {
         name: 'descricao',
         type: 'string',
-        title: 'Descrição'
+        title: 'Descrição',
+        validation: Rule => Rule.max(300).warning('A resposta deve ter no máximo 300 caracteres')
       },
       {
         name: 'imagem',
@@ -21,12 +22,14 @@ export default {
           {
             name: 'inicio',
             type: 'number',
-            title: 'Início'
+            title: 'Início',
+            validation: Rule => Rule.max(10).warning('A resposta deve ter no máximo 10 caracteres')
           },
           {
             name: 'fim',
             type: 'number',
-            title: 'Fim'
+            title: 'Fim',
+            validation: Rule => Rule.max(10).warning('A resposta deve ter no máximo 10 caracteres')
           }
         ]
       }
