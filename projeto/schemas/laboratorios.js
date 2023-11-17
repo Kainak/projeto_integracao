@@ -1,7 +1,7 @@
 export default{
     name: 'laboratorios',
     type: 'document',
-    title: 'Laboratórios',
+    title: 'Laboratorios',
     fields: [
       {
         name:'ordem',

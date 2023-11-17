@@ -1,7 +1,7 @@
 export default {
     name: 'listaDePremios',
     type: 'document',
-    title: 'Lista de Prêmios',
+    title: 'Lista de Premios',
     fields: [
       {
         name:'ordem',

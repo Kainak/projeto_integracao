@@ -1,0 +1,72 @@
+export default {
+    name: 'horarios_clube',
+    type: 'document',
+    title: 'Horarios Clube',
+    fields: [
+      {
+        name: 'turnoManha',
+        type: 'object',
+        title: 'Turno Manhã',
+        fields: [
+          {
+            name: 'inicio',
+            type: 'string',
+            title: 'Início',
+            validation: Rule => Rule.max(5).warning('A resposta deve ter no máximo 5 caracteres'),
+          },
+          {
+            name: 'fim',
+            type: 'string',
+            title: 'Fim',
+            validation: Rule => Rule.max(5).warning('A resposta deve ter no máximo 5 caracteres'),
+          }
+        ]
+      },
+      {
+        name: 'turnoTarde',
+        type: 'object',
+        title: 'Turno Tarde',
+        fields: [
+          {
+            name: 'inicio',
+            type: 'string',
+            title: 'Início',
+            validation: Rule => Rule.max(5).warning('A resposta deve ter no máximo 5 caracteres'),
+          },
+          {
+            name: 'fim',
+            type: 'string',
+            title: 'Fim',
+            validation: Rule => Rule.max(5).warning('A resposta deve ter no máximo 5 caracteres'),
+          }
+        ]
+      },
+      {
+        name: 'diasDaSemana',
+        type: 'array',
+        title: 'Dias da Semana',
+        of: [
+          {
+            type: 'string',
+            validation: Rule => Rule.max(15).error('Não pode ter mais de 15 caracteres.')
+          }
+        ],
+     
+        validation: Rule => Rule.max(4).error('não pode ter mais de 4 dias')
+      },
+      {
+        name: 'turma',
+        type: 'array',
+        title: 'Turma',
+        of: [
+          {
+            type: 'string',
+            validation: Rule => Rule.max(35).error('Não pode ter mais de 35 caracteres.')
+          }
+        ],
+      
+        validation: Rule => Rule.max(4).error('não pode ter mais de 4 turmas')
+      },
+    ]
+  }
+  
