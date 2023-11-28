@@ -12,13 +12,13 @@ export default{
         name: 'titulo',
         type: 'string',
         title: 'Título',
-        validation: Rule => Rule.max(100).warning('Só é possível editar até 100 caracteres')
+        validation: Rule => Rule.max(100).warning('O título só deve ter 100 caracteres')
       },
       {
         name: 'descricao',
         type: 'string',
         title: 'Descrição',
-        validation: Rule => Rule.max(300).warning('A resposta deve ter no máximo 300 caracteres')
+        validation: Rule => Rule.max(300).warning('A descrição pode ter até 300 caracteres')
       },
       {
         name: 'imgGrande',

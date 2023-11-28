@@ -17,7 +17,7 @@ export default {
         name: 'descricao',
         type: 'string',
         title: 'Descrição',
-        validation: Rule => Rule.max(300).warning('A resposta deve ter no máximo 300 caracteres')
+        validation: Rule => Rule.max(300).warning('A descrição deve ter no máximo 300 caracteres')
       }
     ]
   }
