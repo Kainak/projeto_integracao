@@ -6,7 +6,7 @@ export default {
       {
         name:'ordem',
         type:'number',
-        title: 'Ordem'
+        title: 'Ordem',
       },
       {
         name: 'imagem',
@@ -16,7 +16,8 @@ export default {
       {
         name: 'descricao',
         type: 'string',
-        title: 'Descrição'
+        title: 'Descrição',
+        validation: Rule => Rule.max(300).warning('A resposta deve ter no máximo 300 caracteres')
       }
     ]
   }

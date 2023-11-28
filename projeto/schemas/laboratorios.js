@@ -11,12 +11,14 @@ export default{
       {
         name: 'titulo',
         type: 'string',
-        title: 'Título'
+        title: 'Título',
+        validation: Rule => Rule.max(100).warning('Só é possível editar até 100 caracteres')
       },
       {
         name: 'descricao',
         type: 'string',
-        title: 'Descrição'
+        title: 'Descrição',
+        validation: Rule => Rule.max(300).warning('A resposta deve ter no máximo 300 caracteres')
       },
       {
         name: 'imgGrande',
