@@ -6,7 +6,7 @@ export default {
           {
             name: 'descricao',
             type: 'string',
-            title: 'Descrição'
-          }
+            title: 'Descrição',
+            validation: Rule => Rule.max(100).warning('A resposta deve ter no máximo 100 caracteres')}
         ]  
     }
